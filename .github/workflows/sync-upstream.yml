@@ -16,7 +16,7 @@ jobs:
       - name: Sync fork with upstream
         uses: aormsby/Fork-Sync-With-Upstream-action@v3.4.1
         with:
-          upstream_repository: shuaiplus/nodewarden
-          upstream_branch: main
-          target_branch: main
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          target_sync_branch: main
+          target_repo_token: ${{ secrets.GITHUB_TOKEN }}
+          upstream_sync_branch: main
+          upstream_sync_repo: shuaiplus/nodewarden
